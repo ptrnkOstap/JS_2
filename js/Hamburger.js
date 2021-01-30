@@ -28,7 +28,9 @@ class Hamburger {
 
     addBurgerOption(arr, name) {
         const optionIndex = arr.findIndex(x => x.type === name);
-        this.burger.push(Object.assign({}, arr[optionIndex]));
+        if (optionIndex !== -1) {
+            this.burger.push(Object.assign({}, arr[optionIndex]));
+        }
     }
 
     getSizes() {
