@@ -3,6 +3,19 @@ body {
 }
 
 .main_header {
+  background: darkseagreen;
+  margin-bottom: 10px;
+}
+
+.main_header_wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main_header {
   height: 60px;
   padding-left: 30px;
   display: flex;
@@ -10,11 +23,12 @@ body {
 }
 
 .btn-cart {
+  position: relative;
   background-color: transparent;
   border: 3px solid goldenrod;
   border-radius: 15px;
   height: 30px;
-  width: 80px;
+  width: auto;
   cursor: pointer;
   font-weight: bold;
 }
@@ -22,9 +36,92 @@ body {
   background: goldenrod;
   color: white;
 }
+.btn-cart:hover .cart_pop_up {
+  display: flex;
+}
+.btn-cart .cart_pop_up {
+  display: none;
+  flex-flow: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px 10px 40px 10px;
+  position: absolute;
+  width: 250px;
+  height: auto;
+  min-height: 100px;
+  max-height: 350px;
+  border: 1px solid grey;
+  left: -90px;
+  top: 27px;
+  color: black;
+  background-color: lightgray;
+}
+
+.empty_cart_message {
+  color: cornflowerblue;
+  font-size: 14pt;
+}
+
+.cart_pop_up__line {
+  position: relative;
+  display: grid;
+  border: 1px solid transparent;
+  width: 100%;
+  height: 70px;
+  grid-template: 1fr 1fr/0.5fr 1fr 0.3fr;
+}
+.cart_pop_up__line:hover {
+  border: 1px solid grey;
+  transition: 0.2s ease-in-out;
+}
+.cart_pop_up__line .img-link {
+  grid-row: 1/2 span;
+}
+.cart_pop_up__line .product_title {
+  grid-column: 2;
+  grid-row: 1;
+  place-self: center start;
+  margin: 0;
+  padding-left: 5px;
+}
+.cart_pop_up__line .product_subtotal {
+  grid-row: 2;
+  grid-row: 2;
+  margin: 0;
+  place-self: center;
+  padding-left: 5px;
+  font-size: 12px;
+}
+.cart_pop_up__line .remove_from_cart {
+  grid-column: 3;
+  grid-row: 1/span 2;
+  place-self: center;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  color: indianred;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.cart_pop_up_summary {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  background-color: lightcyan;
+  left: 0;
+}
+.cart_pop_up_summary:hover {
+  cursor: auto;
+}
 
 .products {
   width: 40%;
+  margin: 0 auto;
   padding: 0 40px 0 40px;
   display: grid;
   grid-row-gap: 10px;
