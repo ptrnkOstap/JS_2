@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d52ba713-32b8-436d-b8b3-004928987395" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Hamburger.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Hamburger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,18 +47,7 @@
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Node.js.regexp.js">
     <configuration default="true" type="JavascriptDebugType" uri="http://localhost:63342/JS_2/index.html" useFirstLineBreakpoints="true" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -74,12 +57,17 @@
     <configuration name="Hamburger.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/Hamburger.js" working-dir="$PROJECT_DIR$/js">
       <method v="2" />
     </configuration>
+    <configuration name="regexp.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/regexp.js" working-dir="$PROJECT_DIR$/js">
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="Node.js.Hamburger.js" />
+      <item itemvalue="Node.js.regexp.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.regexp.js" />
         <item itemvalue="Node.js.Hamburger.js" />
       </list>
     </recent_temporary>
@@ -100,7 +88,14 @@
       <workItem from="1612212017268" duration="7250000" />
       <workItem from="1612293888739" duration="712000" />
       <workItem from="1612294619825" duration="8119000" />
-      <workItem from="1612379690195" duration="3741000" />
+      <workItem from="1612379690195" duration="4703000" />
+      <workItem from="1612469236018" duration="3016000" />
+      <workItem from="1612472287504" duration="641000" />
+      <workItem from="1612550166180" duration="3933000" />
+      <workItem from="1612603929415" duration="11553000" />
+      <workItem from="1612695388978" duration="9931000" />
+      <workItem from="1612800521305" duration="1435000" />
+      <workItem from="1612825540707" duration="4380000" />
     </task>
     <servers />
   </component>
