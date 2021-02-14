@@ -4,29 +4,56 @@
     <meta charset="UTF-8">
     <title>Интернет-магазин</title>
     <link href="style.css" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/3e08e278ef.js"></script>
 </head>
-<script defer src="js/main.js"></script>
+
 <body>
+<div id="app">
+    <header class="main_header">
+        <div class="main_header_wrapper">
+            <p class="logo">
+                Магазин
+            </p>
+            <form @submit.prevent="filterGoods()" action="#" class="search">
+                <input class="search_input" type="text" v-model="searchLine">
+                <button class="search_btn" href="#" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button @click="isVisibleCart=!isVisibleCart" class="btn-cart" type="button">Корзина</button>
+                <div class="cart_pop_up" v-show="isVisibleCart">
+                    <div class="empty_message_wrapper" v-if="checkCart">
+                        <p class="empty_cart_message">Корзина пуста...</p><img alt="emptycart"
+                                                                               class="empty_cart_image" height=200
+                                                                               src="img/emptycart.png"
+                                                                               width=200/>
+                    </div>
+                    <div :key="pr.id_product" class="cart_pop_up__line" v-for="pr in cartItems">
+                        <a class="img-link" href="#"><img :src="imgCatalog" alt="" height="70" width="70"></a>
+                        <p class="product_title">{{pr.product_name}}</p>
+                        <p class="product_subtotal"> {{pr.quantity}} шт. на
+                            {{(Number(pr.price * pr.quantity)).toLocaleString('ru')}} &#x20bd;</p>
+                        <button @click="removeCartItem(pr)" class="remove_from_cart">X</button>
+                    </div>
+                </div>
+        </div>
+    </header>
+    <main>
+        <div class="products" v-if="filtered.length">
+            <div :key="product.id_product" class="product-item" v-for="product in filtered">
+                <img :alt="product.product_name" :src="imgCatalog" class="product_item_picture" height="70"
+                     width="70">
+                <h3 class="product_item_title">{{product.product_name}}</h3>
+                <p class="product_item_price"> {{Number(product.price).toLocaleString('ru')}} &#x20bd;</p>
+                <button @click="addCartItem(product)" class="by-btn">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="nodata" v-else>
+            <p class="nodata_message">Нет данных</p>
+        </div>
+    </main>
+</div>
+<!--<script defer src="js/main.js"></script>-->
 
-<header class="main_header">
-    <div class="main_header_wrapper">
-        <p class="logo">
-            Магазин
-        </p>
-        <button class="btn-cart" type="button">Зина-Корзина<div class="cart_pop_up">
-<!--            <div class="cart_pop_up__line">-->
-<!--                <a href="#" class="img-link"><img src="img/empty.png" width="70" height="70" alt=""></a>-->
-<!--                <p class="product_title">Ноутбук</p>-->
-<!--                <p class="product_subtotal"> 1 X 15 rub - 15 rub</p>-->
-<!--                <button class="remove_from_cart">X</button>-->
-<!--            </div>-->
-        </div></button>
-
-    </div>
-</header>
-<main>
-        <div class="products"></div>
-</main>
-
+<script defer src="js/vuejs.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </body>
 </html>
