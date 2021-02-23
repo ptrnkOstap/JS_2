@@ -46,11 +46,13 @@ Vue.component('product', {
     },
     template: `
         <div class="product-item">
-            <img :alt="product.product_name" :src="productImg" class="product_item_picture" height="70"
-                 width="70">
-            <h3 class="product_item_title">{{product.product_name}}</h3>
-            <p class="product_item_price"> {{Number(product.price).toLocaleString('ru')}} &#x20bd;</p>
-            <button @click="cartAPI.addCartItem(product)" class="by-btn">Добавить в корзину</button>
+            <img :alt="product.product_name" :src="productImg" class="product_item_picture" height="120"
+                 width="180">
+             <div class="description">
+                <h3 class="product_item_title">{{product.product_name}}</h3>
+                <p class="product_item_price"> {{Number(product.price).toLocaleString('ru')}} &#x20bd;</p>
+                <button @click="cartAPI.addCartItem(product)" class="by-btn">Добавить в корзину</button>
+            </div>
         </div>
     `
 })

@@ -1,0 +1,22 @@
+{
+  "name": "js_2",
+  "version": "1.0.0",
+  "description": "HW7",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptrnkOstap/JS_2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ptrnkOstap/JS_2/issues"
+  },
+  "homepage": "https://github.com/ptrnkOstap/JS_2#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

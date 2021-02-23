@@ -154,26 +154,39 @@ body {
   padding: 0 40px 0 40px;
   display: grid;
   grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .product-item {
-  min-width: 360px;
+  width: 180px;
   border: 1px solid cornflowerblue;
   border-radius: 20px;
-  padding: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
+  grid-template-rows: 1.5fr 1.2fr;
+}
+.product-item .description {
+  place-self: center;
 }
 .product-item .product_item_title {
-  grid-column: 1;
   grid-row: 2;
+  margin: 0;
+  text-align: center;
 }
 .product-item .product_item_price {
   justify-self: center;
   align-self: center;
   font-weight: bold;
   color: goldenrod;
+  margin: 5px 0 5px 0;
+  text-align: center;
+}
+
+.product_item_picture {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .nodata_message {
