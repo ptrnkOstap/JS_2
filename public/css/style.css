@@ -1,6 +1,10 @@
 body {
   font-family: Arial, sans-serif;
 }
+.content_wrapper{
+  margin:0 auto;
+  width:80%;
+}
 
 .main_header {
   background: darkseagreen;
@@ -147,6 +151,14 @@ body {
 .cart_pop_up_summary:hover {
   cursor: auto;
 }
+.cart_list_container{
+  display: grid;
+  justify-content: center;
+}
+.cart_list_line{
+  width: 600px;
+}
+
 
 .products {
   width: 40%;

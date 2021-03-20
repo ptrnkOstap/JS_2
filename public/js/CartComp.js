@@ -64,6 +64,7 @@ Vue.component('cart', {
             :productImg="imgCart"
             @remove="removeCartItem">
             </cart-item-component>
+           <p v-show="!checkCart"><a href="/cart.html">Перейти в корзину</a></p>
         </div>
 </div>
 `
