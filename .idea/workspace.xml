@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d52ba713-32b8-436d-b8b3-004928987395" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Hamburger.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Hamburger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="HW2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,13 +46,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/index.html" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/lesson3" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
   </component>
-  <component name="RunManager" selected="Node.js.Hamburger.js">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -64,6 +74,10 @@
     <configuration name="Hamburger.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/Hamburger.js" working-dir="$PROJECT_DIR$/js">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="Node.js.Hamburger.js" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.Hamburger.js" />
@@ -81,7 +95,12 @@
       <workItem from="1611503331189" duration="328000" />
       <workItem from="1611694009792" duration="27000" />
       <workItem from="1611694086440" duration="1051000" />
-      <workItem from="1611993519874" duration="20480000" />
+      <workItem from="1611993519874" duration="21427000" />
+      <workItem from="1612113908137" duration="8326000" />
+      <workItem from="1612212017268" duration="7250000" />
+      <workItem from="1612293888739" duration="712000" />
+      <workItem from="1612294619825" duration="8119000" />
+      <workItem from="1612379690195" duration="3741000" />
     </task>
     <servers />
   </component>
