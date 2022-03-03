@@ -12,24 +12,26 @@ Vue.component('cart', {
             this.$parent.getJson(`${API}/deleteFromBasket.json`)
                 .then(data => {
                     if (data.result === 1) {
+                        this.$parent.deleteJson(`/api/cart/${product.id_product}`);
                         this.cartItems.splice(this.cartItems.indexOf(product), 1);
                     }
                 })
         },
         addCartItem(product) {
-            this.$parent.getJson(`${API}/addToBasket.json`)
-                .then(data => {
-                    if (data.result === 1) {
-                        let find = this.cartItems.find(prod => prod.id_product === product.id_product);
-                        if (find) {
-                            find.quantity++;
-                        } else {
-                            let prod = Object.assign({quantity: 1}, product);
+            let find = this.cartItems.find(el => el.id_product === product.id_product);
+            if (find) {
+                this.$parent.putJson(`/api/cart/${find.id_product}`, {quantity: 1});
+                find.quantity++;
+            } else {
+                let prod = Object.assign({quantity: 1}, product);
+                this.$parent.postJson('/api/cart', prod)
+                    .then(data => {
+                        if (data.result === 1) {
                             this.cartItems.push(prod);
                         }
-                    }
-                })
-        }
+                    });
+            }
+        },
     },
     computed: {
         checkCart() {
@@ -37,10 +39,10 @@ Vue.component('cart', {
         }
     },
     mounted() {
-        this.$parent.getJson(`${API + this.cartUrl}`)
+        this.$parent.getJson('/api/cart')
             .then(data => {
-                for (let el of data.contents) {
-                    this.cartItems.push(el);
+                    for (let el of data.contents) {
+                        this.cartItems.push(el);
                 }
             });
     },
@@ -62,6 +64,7 @@ Vue.component('cart', {
             :productImg="imgCart"
             @remove="removeCartItem">
             </cart-item-component>
+           <p v-show="!checkCart"><a href="/cart.html">Перейти в корзину</a></p>
         </div>
 </div>
 `
